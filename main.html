@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="de">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
     <!-- Die 3 Meta-Tags oben *müssen* zuerst im head stehen; jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
     <title>Entdecke deine Stadt</title>
 
     <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 
     <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
@@ -20,49 +22,95 @@
   </head>
   <body>
 	<div id="content">
-	<nav id="stickynav">
-        <ul id="nav" class="clearfix">
-          <li><a href="#game">Spiel</a></li>
-          <li><a href="#download">Download</a></li>
-          <li><a href="#team">Team</a></li>
-        </ul>
-      </nav>
-	<div>
+	
+	<nav id="stickynav" class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			
+			<div id="bannerleft" >	
+				<ul id="nav1" class="clearfix" class="list-group">
+				<div>
+					<li class="list-group-item" class="page-scroll"><a href="#game">Spiel</a></li>
+				</div>  
+				<div >
+					<li class="list-group-item" class="page-scroll"><a href="#vision">Vision</a></li>
+				</div>
+				</ul>
+			</div>
+			<div id="banner">
+				<img src="pictures/banner.png" alt="Entdecke deine Stadt Banner" class="displayed"/>
+			</div>
+			<div id="bannerright">
+				<ul id="nav2" class="clearfix" class="list-group">
+				<div >
+					<li class="list-group-item" class="page-scroll"><a href="#download">Download</a></li>
+				</div>
+				<div >
+					<li  class="list-group-item" class="page-scroll"><a href="#team">Team</a></li>
+				</div>
+				</ul>
+			</div>
+			
+			
+		</div>
+	</nav>
+	<div id="inhalt">
    
-	<section id="game">
-		<h1>Entdecke deine Stadt</h1>
+	<section id="game" class="sections">
+		<h1 class="ueberschrift">Entdecke deine Stadt</h1>
 		
 		<iframe width="420" height="315"
 			src="https://www.youtube.com/embed/tgbNymZ7vqY" >
 		</iframe>
 	</section>
 	
-	<section id="download">
-		<a href="http://html-seminar.de"><img src="pictures/google-play-badge.png" alt="PlayStore-Button" /></a>
-		<a href="http://html-seminar.de"><img src="pictures/ios-badge.svg" alt="AppStore-Button" /></a>
+	<section class="zwischen">
+	<hr>
+	</section>
+	<section id="vision" class="sections">
+		<h1 class="ueberschrift">Unsere Vision</h1>
+		<p id="versiontext">Wir wollen Menschen ermöglichen ihre Stadt zu entdecken - zeitlich unabhängig und mit viel Spaß</p>
 	</section>
 	
-	<section id="team">
-	 <h1>Das Team</h1>
-	 <div id="Giulia">
-		<h2 class="names"> Giulia Maier </h2>
-		<img src="pictures/GiuliaMaier.jpg" alt="Giulia Maier" class="pictures"/>
-		<p> Giulia Maier ist Studentin. In ihrer Freizeit bohrt sie gerne in der Nase und sie hasst es 
-		Beispieltexte zu schreiben. </p>
-	 </div>
-	 <div id="Philipp">
-		<h2 class="names"> Philipp Geis </h2>
-		<img src="pictures/GiuliaMaier.jpg" alt="Giulia Maier" class="pictures"/>
-	 </div>
+	<section class="zwischen">
+	<hr>
 	</section>
 	
+	<section id="download" class="sections">
+		<h1 class="ueberschrift">Downloadm&#246glichkeiten</h1>
+		<p class="ueberschrift"> Unsere App gibt es kostenlos im Playstore und im Appstore</p>
+		<div class="left">
+			<h3 class="names">Playstore<h3>
+			<a href="http://html-seminar.de"><img src="pictures/google-play-badge.png" alt="PlayStore-Button" class="pictures2"/></a>
+		</div>
+		<div class="right">
+			<h3 class="names">Appstore</h3>
+			<a href="http://html-seminar.de"><img src="pictures/ios-badge.svg" alt="AppStore-Button" class="pictures2"/></a>
+		</div>
+	</section>
 	
+	<section class="zwischen">
+	<hr>
+	</section>
 	
+	<section id="team" class="sections" >
+	 <h1 class="ueberschrift">Das Team</h1>
+		<section class="left">
+			<h2 class="names"> Giulia Maier </h2>
+			<img src="pictures/GiuliaMaier.jpg" alt="Giulia Maier" class="pictures1"/>
+			<p> Giulia Maier ist Masterstudentin im Fach Informatik an der Hochschule Karlsruhe. 
+				In ihrer Freizeit engagiert sie sich in der Fachschaft und liebt es zu spielen.</p>
+		</section>
+		<section class="right">
+			<h2 class="names"> Philipp Geis </h2>
+			<img src="pictures/GiuliaMaier.jpg" alt="Giulia Maier" class="pictures1"/>
+		</section>
+	</section>
 	
 	
     <!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Binde alle kompilierten Plugins zusammen ein (wie hier unten) oder such dir einzelne Dateien nach Bedarf aus -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+	<script src="js/navigation.js"></script>
   </body>
 </html>

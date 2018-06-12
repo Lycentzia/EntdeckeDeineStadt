@@ -1,20 +1,75 @@
-#Giulia {
+.left {
 	float:left;
-	width:50%
+	width:50%;
+	
 }
 
-#Philipp {
+.right {
 	float:right;
-	width:50%
+	width:50%;
 }
+
+#stickynav {
+	background-color: white;
+	position: fixed;
+	width:100%;
+	display: unset;
+}
+
+#inhalt {
+	padding-top:200px;
+}
+
+#banner {
+	width: 60%;
+	margin-left: auto;
+    margin-right: auto
+	
+}
+
+#bannerleft {
+	width: 20%;
+	float: left;
+	margin-top:2em
+	
+}
+
+#bannerright {
+	width: 20%;
+	float: right;
+	margin-top:2em
+}
+
 
 .names {
 	text-align: center;
 }
 
-.pictures {
+
+.pictures1 {
 	width:70%;
-	margin-left: auto;
+	display: block;
+    margin-left: auto;
     margin-right: auto
+}
+
+.pictures2 {
+	width:40%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.ueberschrift {
+	text-align: center;
+}
+
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
 	
+.zwischen {
+	background-color:white;
+	height: 5px;
 }
