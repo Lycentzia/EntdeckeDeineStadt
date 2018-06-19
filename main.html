@@ -12,6 +12,8 @@
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster|Luckiest+Guy|Play|Poppins|Source+Code+Pro|VT323" rel="stylesheet">
 
     <!-- Unterst�tzung f�r Media Queries und HTML5-Elemente in IE8 �ber HTML5 shim und Respond.js -->
     <!-- ACHTUNG: Respond.js funktioniert nicht, wenn du die Seite �ber file:// aufrufst -->
@@ -20,19 +22,37 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-	<div id="content">
-	
-	<nav id="stickynav" class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<div id="container">
+		<div id="header">		
+			<section id="mobileHeader">
+				<div id="tagHeader">
+					<div >
+						<div class="dropdown" >
+							<img src="pictures/banner.png" alt="Entdecke deine Stadt Banner" class="displayed dropbtn" width="300px" onclick="myFunction()" class="dropbtn">
+							<div id="myDropdown" class="dropdown-content">
+								<a class="page-scroll" href="#game">Spiel</a>
+								<a class="page-scroll" href="#vision">Vision</a>
+								<a class="page-scroll" href="#download">Download</a></
+								<a class="page-scroll" href="#team">Team</a>											<a class="page-scroll" href="#impressumneu">Legal</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+	<section id="webHeader">
+	<nav id="stickynav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
 			
 			<div id="bannerleft" >	
-				<ul id="nav1" class="clearfix" class="list-group">
+				<ul id="nav1" class="clearfix nav navbar-nav list-group">
 				<div>
-					<li class="list-group-item" class="page-scroll"><a href="#game">Spiel</a></li>
+					<li class="list-group-item page-scroll"><a href="#game">Spiel</a></li>
 				</div>  
 				<div >
-					<li class="list-group-item" class="page-scroll"><a href="#vision">Vision</a></li>
+					<li class="list-group-item page-scroll"><a href="#vision">Vision</a></li>
 				</div>
 				</ul>
 			</div>
@@ -40,77 +60,158 @@
 				<img src="pictures/banner.png" alt="Entdecke deine Stadt Banner" class="displayed"/>
 			</div>
 			<div id="bannerright">
-				<ul id="nav2" class="clearfix" class="list-group">
+				<ul id="nav2" class="clearfix nav navbar-nav" class="list-group">
 				<div >
-					<li class="list-group-item" class="page-scroll"><a href="#download">Download</a></li>
+					<li class="list-group-item page-scroll"><a href="#download">Download</a></li>
 				</div>
 				<div >
-					<li  class="list-group-item" class="page-scroll"><a href="#team">Team</a></li>
+					<li  class="list-group-item page-scroll"><a href="#team">Team</a></li>
 				</div>
 				</ul>
 			</div>
 			
 			
-		</div>
-	</nav>
+		</nav>
+		</section>
+	</div>
 	<div id="inhalt">
    
-	<section id="game" class="sections">
-		<h1 class="ueberschrift">Entdecke deine Stadt</h1>
+	<section id="game" class="container-1">
+		<h1 class="ueberschrift">Entdecke Karlsruhe</h1>
 		
 		<iframe width="420" height="315"
-			src="https://www.youtube.com/embed/tgbNymZ7vqY" >
+			src="https://www.youtube.com/embed/tgbNymZ7vqY" class="leftVid">
 		</iframe>
+		<p id="gameText">
+		DU war noch nie zuvor in Karlsruhe und möchtest die Stadt möglichst schnell kennen lernen? <br>
+		DU möchtest viele interessante Sehenswürdigkeiten sehen? <br>
+		Eine Möglichkeit hierfür sind Stadtführungen. Diese sind allerdings oft langweilig und öde. <br>
+		<br>
+		Dafür haben wir die Lösung. Mit der Smartphone App „Auf der Spur“ entdeckst DU mit Rätseln 
+		ganz schnell Karlsruhe.<br> 
+		Nach der Auswahl des Falles wirst DU mittels GPS an den Startpunkt geschickt. 
+		Mit Hilfe der AR Technologie werden Hinweise und Informationen in die Umgebung eingeblendet, 
+		die DICH von einem Ort zum anderen lotsen.
+		Interessiert DICH ein Ort näher, kannst DU dir weitere Informationen zu den Sehenswürdigkeiten und 
+		Hotspots einblenden lassen. <br>
+		<br>
+		Die App ist in erster Linie für Tagesausflüge konzipiert.
+
+</p>
 	</section>
 	
-	<section class="zwischen">
+	<div class="zwischen">
 	<hr>
-	</section>
+	</div>
+	
 	<section id="vision" class="sections">
 		<h1 class="ueberschrift">Unsere Vision</h1>
-		<p id="versiontext">Wir wollen Menschen erm�glichen ihre Stadt zu entdecken - zeitlich unabh�ngig und mit viel Spa�</p>
+		<p class="schrift1 visionstext">Wir wollen Menschen ermöglichen ihre Stadt zu entdecken <br> - zeitlich unabhängig und mit viel Spaß</p>
+		<p class="schrift2 visionstext">Wir wollen Menschen ermöglichen ihre Stadt zu entdecken <br> - zeitlich unabhängig und mit viel Spaß</p>
+		<p class="schrift3 visionstext">Wir wollen Menschen ermöglichen ihre Stadt zu entdecken <br> - zeitlich unabhängig und mit viel Spaß</p>
+		<p class="schrift4 visionstext">Wir wollen Menschen ermöglichen ihre Stadt zu entdecken <br> - zeitlich unabhängig und mit viel Spaß</p>
+		<p class="schrift5 visionstext">Wir wollen Menschen ermöglichen ihre Stadt zu entdecken <br> - zeitlich unabhängig und mit viel Spaß</p>
+		<p class="schrift6 visionstext">Wir wollen Menschen ermöglichen ihre Stadt zu entdecken <br> - zeitlich unabhängig und mit viel Spaß</p>
+		<p class="schrift7 visionstext">Wir wollen Menschen ermöglichen ihre Stadt zu entdecken <br> - zeitlich unabhängig und mit viel Spaß</p>		
 	</section>
 	
-	<section class="zwischen">
+	<div class="zwischen">
 	<hr>
-	</section>
+	</div>
 	
 	<section id="download" class="sections">
+		<div>
 		<h1 class="ueberschrift">Downloadm&#246glichkeiten</h1>
 		<p class="ueberschrift"> Unsere App gibt es kostenlos im Playstore und im Appstore</p>
-		<div class="left">
-			<h3 class="names">Playstore<h3>
-			<a href="http://html-seminar.de"><img src="pictures/google-play-badge.png" alt="PlayStore-Button" class="pictures2"/></a>
-		</div>
-		<div class="right">
-			<h3 class="names">Appstore</h3>
-			<a href="http://html-seminar.de"><img src="pictures/ios-badge.svg" alt="AppStore-Button" class="pictures2"/></a>
+		
+			<div>
+				<h3 class="names">Playstore</h3>
+				<a href="http://html-seminar.de"><img src="pictures/google-play-badge.png" alt="PlayStore-Button" class="pictures2"/></a>
+			</div>
+			<div>
+				<h3 class="names">Appstore</h3>
+				<a href="http://html-seminar.de"><img src="pictures/ios-badge.svg" alt="AppStore-Button" class="pictures2"/></a>
+			</div>
 		</div>
 	</section>
 	
-	<section class="zwischen">
+	<div class="zwischen">
 	<hr>
+	</div>
+	
+	<section id="team" class="sections anchor" >
+	<div class="container-1">
+		<div>
+			<h1 class="ueberschrift">Das Team</h1>
+		</div>
+		
+			<div class="left">
+				<h2 class="names"> Giulia Maier </h2>
+				<img src="pictures/GiuliaMaier.jpg" alt="Giulia Maier" class="pictures1"/>
+				<p> Giulia Maier ist Masterstudentin im Fach Informatik an der Hochschule Karlsruhe. 
+				In ihrer Freizeit engagiert sie sich in der Fachschaft und liebt es zu spielen.</p>
+			</div>
+			<div class="right">
+				<h2 class="names"> Philipp Geis </h2>
+				<img src="pictures/GiuliaMaier.jpg" alt="Giulia Maier" class="pictures1"/>
+			</div>
+		
+	</div>
 	</section>
 	
-	<section id="team" class="sections" >
-	 <h1 class="ueberschrift">Das Team</h1>
-		<section class="left">
-			<h2 class="names"> Giulia Maier </h2>
-			<img src="pictures/GiuliaMaier.jpg" alt="Giulia Maier" class="pictures1"/>
-			<p> Giulia Maier ist Masterstudentin im Fach Informatik an der Hochschule Karlsruhe. 
-				In ihrer Freizeit engagiert sie sich in der Fachschaft und liebt es zu spielen.</p>
-		</section>
-		<section class="right">
-			<h2 class="names"> Philipp Geis </h2>
-			<img src="pictures/GiuliaMaier.jpg" alt="Giulia Maier" class="pictures1"/>
-		</section>
-	</section>
+	<div id="footer">
+			<div class="row">
+				<div class="col-4 text-center">
+					<a href="mailto:giulia_maier@t-online"> E-Mail an Kontakt </a>
+				</div>
+				<div class="col-4 text-center">
+					<a href="https://ausdemlebeneinesnerds.blogspot.com/p/blog-page.html"> Impressum </a>
+				</div>
+				<div class="col-4 text-center">
+					<a href="https://ausdemlebeneinesnerds.blogspot.com/p/datenschutzerklarung.html"> Datenschutzerklärung </a>
+				</div>
+			</div>
+			<div class="footer-copyright text-center py-3">© 2018 Copyright:
+				<a href=""> Giulia Maier</a>
+			</div>
+	</div>
 	
 	
     <!-- jQuery (wird f�r Bootstrap JavaScript-Plugins ben�tigt) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Binde alle kompilierten Plugins zusammen ein (wie hier unten) oder such dir einzelne Dateien nach Bedarf aus -->
     <script src="bootstrap/js/bootstrap.js"></script>
-	<script src="js/navigation.js"></script>
+	<script src="./bootstrap/scrollingNav/js/jquery.easing.min.js"></script>
+	<script src="./bootstrap/scrollingNav/js/scrolling-nav.js"></script>
+	
+	<script>
+		var shiftWindow = function() { scrollBy(0, -150) };
+		if (location.hash) shiftWindow();
+		window.addEventListener("hashchange", shiftWindow);
+	</script>
+	
+	<script>
+				function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+				}
+
+				// Close the dropdown menu if the user clicks outside of it
+				window.onclick = function(event) {
+					if (!event.target.matches('.dropbtn')) {
+	
+						var dropdowns = document.getElementsByClassName("dropdown-content");
+						var i;
+						for (i = 0; i < dropdowns.length; i++) {
+							var openDropdown = dropdowns[i];
+							if (openDropdown.classList.contains('show')) {
+								openDropdown.classList.remove('show');
+							}
+						}
+					}
+				} 
+				
+		</script>
   </body>
+  
+
 </html>
