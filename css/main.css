@@ -1,4 +1,11 @@
+body {
+	font-family: Garamond
+}
 
+.textpeople {
+	margin-left: 5px;
+	text-align: block;
+}
 
 #stickynav {
 	background-color: white;
@@ -13,18 +20,15 @@
 	display: table-row-group;
 }
 
-#footer {
+.footer {
 	width: 100%;
 	margin-top: 0px;
 	margin-left: 0px;
 	background-color: white;
 }
 
-.footerInhalt {
-	width:25%;
-	float:left;
-	margin-left: auto;
-	margin-top: auto
+.footertext {
+ color:black;	
 }
 
 #banner {
@@ -85,11 +89,12 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-	height:100px	}
+	height:120px	}
 	
 .zwischen {
 	background-color:white;
 	height: 5px;
+	width: 100%
 }
 
 .leftVid {
@@ -135,6 +140,10 @@ font-family: 'VT323', monospace;
 		display: none;
 	}
 	
+	#mobilfooter {
+		display: none;
+	}
+	
 	.left {
 		float:left;
 		width:50%;	
@@ -153,6 +162,10 @@ font-family: 'VT323', monospace;
 
 @media (max-width: 699px) { 
 	#webHeader {
+		display: none;
+	}
+	
+	#webfooter {
 		display: none;
 	}
 	
@@ -175,6 +188,8 @@ font-family: 'VT323', monospace;
     position: relative;
     display: inline-block;
 	right: 0;
+	background-color:white;
+	width:100%
 }
 
 /* Dropdown Content (Hidden by Default) */

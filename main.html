@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=0.9, user-scalable=no">
+	
     <!-- Die 3 Meta-Tags oben *m�ssen* zuerst im head stehen; jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
     <title>Entdecke deine Stadt</title>
 
@@ -23,18 +26,18 @@
     <![endif]-->
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-	<div id="container">
+	<div id="container-1">
 		<div id="header">		
 			<section id="mobileHeader">
 				<div id="tagHeader">
 					<div >
 						<div class="dropdown" >
-							<img src="pictures/banner.png" alt="Entdecke deine Stadt Banner" class="displayed dropbtn" width="300px" onclick="myFunction()" class="dropbtn">
+							<img src="pictures/banner.png" alt="Entdecke deine Stadt Banner" class="displayed dropbtn " width="350px" onclick="myFunction()">
 							<div id="myDropdown" class="dropdown-content">
 								<a class="page-scroll" href="#game">Spiel</a>
 								<a class="page-scroll" href="#vision">Vision</a>
-								<a class="page-scroll" href="#download">Download</a></
-								<a class="page-scroll" href="#team">Team</a>											<a class="page-scroll" href="#impressumneu">Legal</a>
+								<a class="page-scroll" href="#download">Download</a>
+								<a class="page-scroll" href="#team">Team</a>											
 							</div>
 						</div>
 					</div>
@@ -96,8 +99,7 @@
 		Hotspots einblenden lassen. <br>
 		<br>
 		Die App ist in erster Linie für Tagesausflüge konzipiert.
-
-</p>
+	</p>
 	</section>
 	
 	<div class="zwischen">
@@ -106,13 +108,9 @@
 	
 	<section id="vision" class="sections">
 		<h1 class="ueberschrift">Unsere Vision</h1>
-		<p class="schrift1 visionstext">Wir wollen Menschen ermöglichen ihre Stadt zu entdecken <br> - zeitlich unabhängig und mit viel Spaß</p>
 		<p class="schrift2 visionstext">Wir wollen Menschen ermöglichen ihre Stadt zu entdecken <br> - zeitlich unabhängig und mit viel Spaß</p>
 		<p class="schrift3 visionstext">Wir wollen Menschen ermöglichen ihre Stadt zu entdecken <br> - zeitlich unabhängig und mit viel Spaß</p>
-		<p class="schrift4 visionstext">Wir wollen Menschen ermöglichen ihre Stadt zu entdecken <br> - zeitlich unabhängig und mit viel Spaß</p>
-		<p class="schrift5 visionstext">Wir wollen Menschen ermöglichen ihre Stadt zu entdecken <br> - zeitlich unabhängig und mit viel Spaß</p>
-		<p class="schrift6 visionstext">Wir wollen Menschen ermöglichen ihre Stadt zu entdecken <br> - zeitlich unabhängig und mit viel Spaß</p>
-		<p class="schrift7 visionstext">Wir wollen Menschen ermöglichen ihre Stadt zu entdecken <br> - zeitlich unabhängig und mit viel Spaß</p>		
+				
 	</section>
 	
 	<div class="zwischen">
@@ -148,32 +146,54 @@
 			<div class="left">
 				<h2 class="names"> Giulia Maier </h2>
 				<img src="pictures/GiuliaMaier.jpg" alt="Giulia Maier" class="pictures1"/>
-				<p> Giulia Maier ist Masterstudentin im Fach Informatik an der Hochschule Karlsruhe. 
+				<p class="textpeople"> Giulia Maier ist Masterstudentin im Fach Informatik an der Hochschule Karlsruhe. 
 				In ihrer Freizeit engagiert sie sich in der Fachschaft und liebt es zu spielen.</p>
 			</div>
 			<div class="right">
 				<h2 class="names"> Philipp Geis </h2>
 				<img src="pictures/GiuliaMaier.jpg" alt="Giulia Maier" class="pictures1"/>
+				<p class="textpeople">Füller text ohne Sinn</p>
 			</div>
 		
 	</div>
 	</section>
 	
-	<div id="footer">
+	<div id="webfooter">
+		<div class = "footer">
 			<div class="row">
 				<div class="col-4 text-center">
-					<a href="mailto:giulia_maier@t-online"> E-Mail an Kontakt </a>
+					<a class="footertext" href="mailto:giulia_maier@t-online"> E-Mail an Kontakt </a>
 				</div>
 				<div class="col-4 text-center">
-					<a href="https://ausdemlebeneinesnerds.blogspot.com/p/blog-page.html"> Impressum </a>
+					<a class="footertext" href="https://ausdemlebeneinesnerds.blogspot.com/p/blog-page.html"> Impressum </a>
 				</div>
 				<div class="col-4 text-center">
-					<a href="https://ausdemlebeneinesnerds.blogspot.com/p/datenschutzerklarung.html"> Datenschutzerklärung </a>
+					<a class="footertext" href="https://ausdemlebeneinesnerds.blogspot.com/p/datenschutzerklarung.html"> Datenschutzerklärung </a>
 				</div>
 			</div>
 			<div class="footer-copyright text-center py-3">© 2018 Copyright:
-				<a href=""> Giulia Maier</a>
+				<a class="footertext" href=""> Giulia Maier & Philipp Geis</a>
 			</div>
+		</div>
+	</div>
+	
+	<div id="mobilfooter">
+		<div class = "footer">
+			<div>
+				<div class="text-center">
+					<a class="footertext" href="mailto:giulia_maier@t-online"> E-Mail an Kontakt </a>
+				</div>
+				<div class="text-center">
+					<a class="footertext" href="https://ausdemlebeneinesnerds.blogspot.com/p/blog-page.html"> Impressum </a>
+				</div>
+				<div class="text-center">
+					<a class="footertext" href="https://ausdemlebeneinesnerds.blogspot.com/p/datenschutzerklarung.html"> Datenschutzerklärung </a>
+				</div>
+			</div>
+			<div class="footer-copyright text-center py-3">© 2018 Copyright:
+				<a class="footertext" href=""> Giulia Maier & Philipp Geis</a>
+			</div>
+		</div>	
 	</div>
 	
 	
