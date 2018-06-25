@@ -25,7 +25,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" class="schrift1">
 	<div id="container-1">
 		<div id="header">		
 			<section id="mobileHeader">
@@ -101,7 +101,7 @@
 		Die App ist in erster Linie für Tagesausflüge konzipiert.
 			
 	</p>
-	<div style="positon:absolute">
+	<div id="features">
 		Features
 		<ul>
 			<li>Aufgrund der spielerischen Art hat die App einen hohen Unterhaltungswert</li>
@@ -161,12 +161,15 @@
 				<h2 class="names"> Giulia Maier </h2>
 				<img src="pictures/GiuliaMaier.jpg" alt="Giulia Maier" class="pictures1"/>
 				<p class="textpeople"> Giulia Maier ist Masterstudentin im Fach Informatik an der Hochschule Karlsruhe. 
-				In ihrer Freizeit engagiert sie sich in der Fachschaft und liebt es zu spielen.</p>
+				In ihrer Freizeit engagiert sie sich in der Fachschaft und liebt es zu spielen. 
+				Außerdem ist sie ein großer Fan von Krimifilmen und -geschichten.</p>
 			</div>
 			<div class="right">
 				<h2 class="names"> Philipp Geis </h2>
-				<img src="pictures/PhilippGeis.jpg" alt="Philipp Geis" class="pictures1"/>
-				<p class="textpeople">Philipp Geis studiert im ersten Semester Master of Science - Informatik an der Karlsruher Hochschule f�r Technik und Wirtschaft. Neben seinem Engagement im DRK lernt er gerne neue Sachen kennen und verbringt viel Zeit mit Freunden.</p>
+				<img src="pictures/PhilippGeis.jpg" alt="Philipp Geis" class="pictures3"/>
+				<p class="textpeople">Philipp Geis studiert im ersten Semester Master of Science - 
+				Informatik an der Karlsruher Hochschule für Technik und Wirtschaft. 
+				Neben seinem Engagement im DRK lernt er gerne neue Sachen kennen und verbringt viel Zeit mit Freunden.</p>
 			</div>
 		
 	</div>
@@ -225,26 +228,25 @@
 	</script>
 	
 	<script>
-				function myFunction() {
-				document.getElementById("myDropdown").classList.toggle("show");
-				}
+		function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
 
-				// Close the dropdown menu if the user clicks outside of it
-				window.onclick = function(event) {
-					if (!event.target.matches('.dropbtn')) {
-	
-						var dropdowns = document.getElementsByClassName("dropdown-content");
-						var i;
-						for (i = 0; i < dropdowns.length; i++) {
-							var openDropdown = dropdowns[i];
-							if (openDropdown.classList.contains('show')) {
-								openDropdown.classList.remove('show');
-							}
-						}
+		// Close the dropdown menu if the user clicks outside of it
+		window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
 					}
-				} 
+				}
+			}
+		} 
 				
-		</script>
+	</script>
   </body>
   
 

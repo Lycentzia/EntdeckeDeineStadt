@@ -1,5 +1,5 @@
 body {
-	font-family: Garamond
+	font-family: 'Poppins', sans-serif;
 }
 
 .textpeople {
@@ -12,6 +12,11 @@ body {
 	position: fixed;
 	width:100%;	
 	display: unset;
+}
+
+#features {
+	clear: both;
+	margin-left:5px;
 }
 
 .container-1 {
@@ -67,7 +72,7 @@ body {
 
 
 .pictures1 {
-	width:70%;
+	width:72%;
 	display: block;
     margin-left: auto;
     margin-right: auto
@@ -80,6 +85,12 @@ body {
     margin-right: auto
 }
 
+.pictures3 {
+	width:69%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
 
 .ueberschrift {
 	text-align: center;
