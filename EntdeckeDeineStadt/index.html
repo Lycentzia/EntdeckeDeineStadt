@@ -32,7 +32,7 @@
 			<section id="mobileHeader">
 				<div id="tagHeader">
 					<div >
-						<div class="dropdown" >
+						<div class="dropdown " >
 							<img src="pictures/banner.png" alt="Entdecke deine Stadt Banner" class="displayed dropbtn " width="350px" onclick="myFunction()">
 							<div id="myDropdown" class="dropdown-content">
 								<a class="page-scroll" href="#game">Spiel</a>
@@ -53,10 +53,10 @@
 			<div id="bannerleft" >	
 				<ul id="nav1" class="clearfix nav navbar-nav list-group">
 				<div>
-					<li class="list-group-item page-scroll"><a href="#game">Spiel</a></li>
+					<li class="list-group-item page-scroll"><a  href="#game">Spiel</a></li>
 				</div>  
 				<div >
-					<li class="list-group-item page-scroll"><a href="#vision">Vision</a></li>
+					<li class="list-group-item page-scroll"><a  href="#vision">Vision</a></li>
 				</div>
 				</ul>
 			</div>
@@ -69,7 +69,7 @@
 					<li class="list-group-item page-scroll"><a href="#download">Download</a></li>
 				</div>
 				<div >
-					<li  class="list-group-item page-scroll"><a href="#team">Team</a></li>
+					<li  class="list-group-item page-scroll"><a  href="#team">Team</a></li>
 				</div>
 				</ul>
 			</div>
@@ -249,6 +249,13 @@
 				}
 			}
 		} 
+		
+			$( '#webHeader .navbar-nav a' ).on( 'click', function () {
+			$( '#webHeader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+			$( this ).parent( 'li' ).addClass( 'active' );
+			
+
+});
 				
 	</script>
   </body>
